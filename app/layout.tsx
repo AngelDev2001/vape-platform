@@ -23,6 +23,14 @@ export default function RootLayout({
       lang="es"
       className={`${spaceGrotesk.variable} h-full antialiased light`}
     >
+    <head>
+      {/*<link*/}
+      {/*    rel="stylesheet"*/}
+      {/*    href="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/krypton.css"*/}
+      {/*    type="text/css"*/}
+      {/*/>*/}
+      <script src="https://sandbox-checkout.izipay.pe/payments/v1/js/index.js" defer></script>
+    </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
